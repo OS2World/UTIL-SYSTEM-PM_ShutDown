@@ -1,0 +1,37 @@
+/**
+ **  PM Shutdown v0.1
+ **
+ **  (c) 1994 by Carsten Wimmer
+ **
+ **/
+
+#include <os2.h>
+#include "shutdown.h"
+
+DLGTEMPLATE ID_DIALOG LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Shutdown", ID_DIALOG, 200, 100, 267, 113, WS_VISIBLE,
+            FCF_TITLEBAR | FCF_SYSMENU | FCF_SYSMODAL | FCF_SCREENALIGN
+            PRESPARAMS PP_BACKGROUNDCOLOR, 0x0000FF00L
+    BEGIN
+        DEFPUSHBUTTON   "Yeah, do it !", ID_BUTTON_OK, 15, 11, 115, 52
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00000000L
+                        PRESPARAMS PP_BACKGROUNDCOLOR, 0x00FFFFFFL
+                        PRESPARAMS PP_FONTNAMESIZE, "16.Cooper Black"
+        CTEXT           "Do you really want to", 104, 5, 88, 261, 17, 
+                        DT_VCENTER
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FF0000L
+                        PRESPARAMS PP_BACKGROUNDCOLOR, 0x00FFFF00L
+                        PRESPARAMS PP_FONTNAMESIZE, "18.Stop"
+        CTEXT           "shutdown this machine?", 105, 5, 71, 261, 17, 
+                        DT_VCENTER
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FF0000L
+                        PRESPARAMS PP_BACKGROUNDCOLOR, 0x00FFFF00L
+                        PRESPARAMS PP_FONTNAMESIZE, "18.Stop"
+        PUSHBUTTON      "Nah, not now.", ID_BUTTON_CANCEL, 141, 11, 115, 52
+                        PRESPARAMS PP_FOREGROUNDCOLOR, 0x00FFFFFFL
+                        PRESPARAMS PP_BACKGROUNDCOLOR, 0x00000000L
+                        PRESPARAMS PP_FONTNAMESIZE, "16.Cooper Black"
+    END
+END
+

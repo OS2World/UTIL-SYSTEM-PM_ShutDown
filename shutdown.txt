@@ -1,0 +1,62 @@
+
+
+
+                             ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+                             ³ PM Shutdown v0.1 ³
+                             ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+                          (c) 1994 by Carsten Wimmer
+
+  Introduction:
+  ~~~~~~~~~~~~
+   PM Shutdown is a small 32-Bit application for OS/2 v2 Presentation
+   Manager. It pops up a dialog box (with weird colors) and asks whether
+   you want to perform a shutdown or not. If you select "Yeah, do it !"
+   or if PM Shutdown times out (see usage), the WPS and the file-system
+   will completely shut down. If you select "Nah, not now." you get back
+   to the system.
+
+   PM Shutdown was a quick hack, and therefore I am including the
+   complete source. You may use this source in your own programs, or
+   change it to suit your needs. But don't change the original archive.
+   If you enhance PM Shutdown, please send me a copy.
+
+
+  Usage:
+  ~~~~~
+   You *must* start PM Shutdown with an integer timer value on its
+   command line. This value (in seconds) will be used by the application
+   as a timer. For example, if you start PM Shutdown with a value of 30
+   on the command line, it waits 30 seconds till it performs a shutdown
+   itself. This means, you can use PM Shutdown in batchfiles and
+   similar things.
+
+
+  Legal Disclaimer:
+  ~~~~~~~~~~~~~~~~
+   PM Shutdown and its source are provided as is, with no warranty of any
+   kind, either expressed or implied. PM Shutdown and its source are only
+   guaranteed to occupy disk space. You are free to copy and distribute
+   the PM Shutdowm archive freely, provided no changes or additions are
+   made to the package.
+
+   Carsten Wimmer (The Author) shall in no event be held liable to you or
+   anyone else for any damages of ANY kind, incidental or consequential,
+   arising from the use or inability to use this program.
+
+
+  Final Note:
+  ~~~~~~~~~~
+   Suggestions, bugreports, etc. are welcome.
+   If you want to contact me, use one of the following:
+
+     BBS             -> The Ghost Train, +49 241 524204, 24 hours a day
+     FAX             -> +49 241 524204
+     FidoNet         -> 2:2452/53.0
+     FidoNet Classic -> 2:242/53.0
+     Usenet          -> cawim@train.fido.de -or-
+                        cawim@pool.informatik.rwth-aachen.de
+
+   Have fun!
+   Carsten Wimmer
+
